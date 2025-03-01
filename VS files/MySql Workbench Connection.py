@@ -3,7 +3,7 @@ from sqlalchemy import create_engine
 import os
 
 # Database connection string
-conn_string = 'mysql+pymysql://root:Paras%40123@127.0.0.1/Netflix_pre_processing'
+conn_string = 'mysql+pymysql://root:<Your Password>@127.0.0.1/Netflix_pre_processing'
 db = create_engine(conn_string)
 conn = db.connect()
 
@@ -11,7 +11,7 @@ conn = db.connect()
 files = ['Netflix Dataset (Raw)']
 
 # Correcting file path usage
-base_path = r"E:\Personal Resources_DA\SQL\Project\Netflix Dataset\Dataset"
+base_path = r"<Your file path>"
 
 for file in files:
     try:
