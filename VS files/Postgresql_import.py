@@ -5,13 +5,13 @@ import pandas as pd
 db_params = {
     "dbname": "Netflix",  # Your database name
     "user": "postgres",  # Your PostgreSQL username
-    "password": "Paras@123",  # Your PostgreSQL password
+    "password": "<Your password>",  # Your PostgreSQL password
     "host": "localhost",  # Change if different
     "port": "5432"  # Default PostgreSQL port
 }
 
 # Load CSV file
-file_path = r"E:\Personal Resources_DA\SQL\Project\Netflix Dataset\Dataset\Netflix Dataset (Raw).csv"
+file_path = r"<File path>"
 df = pd.read_csv(file_path)
 
 # Connect to PostgreSQL
